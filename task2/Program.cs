@@ -33,7 +33,7 @@ int IntersectionPoint(int[] straight1, int[] straight2)
         }
         else
         {
-            System.Console.WriteLine($"Точка пересечния x = 0 y = {straight[1]}");
+            System.Console.WriteLine($"Точка пересечния x = 0 y = {straight1[1]}");
             return 0;
         }
     }
@@ -50,3 +50,6 @@ int IntersectionPoint(int[] straight1, int[] straight2)
     System.Console.WriteLine($"Точка пересечения x = {x} y = {y}");
     return 0;
 }
+int[] straight1 = Straight();
+int[] straight2 = Straight();
+IntersectionPoint(straight1, straight2);
